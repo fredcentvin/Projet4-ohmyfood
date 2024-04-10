@@ -39,8 +39,8 @@
 .logo1 {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 90%;
   padding-right: 40px;
 }
@@ -56,24 +56,6 @@
   height: 25px;
 }
 
-/****** rajout dess choix de délai d'animation en variable***********/
-@keyframes slide {
-  0% {
-    transform: scale(0);
-  }
-  25% {
-    transform: scale(0.2);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  75% {
-    transform: scale(0.7);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -83,7 +65,7 @@ a {
 h1 {
   font-family: "roboto";
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
   padding-bottom: 15px;
 }
 @media (min-width: 1024px) {
@@ -137,7 +119,7 @@ h5 {
 }
 @media (min-width: 1024px) {
   h5 {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -168,6 +150,24 @@ p {
   font-size: 16px;
 }
 
+/****** rajout dess choix de délai d'animation en variable***********/
+@keyframes slide {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .cardglobal {
   display: flex;
   flex-direction: row;
@@ -251,10 +251,10 @@ p {
   width: 100%;
 }
 
-.gridentrees {
+.formgrid {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
   margin-bottom: 15px;
 }
 
@@ -277,13 +277,6 @@ p {
   }
 }
 
-.gridplats {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
 .slideinplats {
   animation-duration: 0.7s;
   transform: scale(1);
@@ -302,13 +295,6 @@ p {
     padding-left: 120px;
     padding-right: 120px;
   }
-}
-
-.griddesserts {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 15px;
 }
 
 .slideindesserts {
@@ -332,9 +318,12 @@ p {
 }
 
 .titre {
-  padding-bottom: 7px;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 5px;
   border-bottom: 5px solid #99e2d0;
   width: 45px;
+  margin-bottom: 7px;
 }
 @media (min-width: 768px) {
   .titre {
@@ -346,15 +335,6 @@ p {
     margin-left: 120px;
     width: 40px;
   }
-}
-
-.titreh2 {
-  font-weight: 300;
-}
-
-.cardmenu {
-  display: flex;
-  width: 100%;
 }
 
 .nomduresto {
@@ -373,15 +353,46 @@ p {
   }
 }
 
-.cardresto {
-  margin-top: 15px;
-  margin-bottom: 15px;
+.cardmenu {
+  display: flex;
+  width: 100%;
 }
-
-.card-content {
+.cardmenu .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0px 3px 5px rgb(214, 213, 213);
+  overflow-x: hidden;
+}
+.cardmenu .card .card-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.cardmenu .card .card-txt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+}
+.cardmenu .card .resto-text {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cardmenu .card .resto-petittexte {
+  font-size: 13px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .symboleeuro {
@@ -393,40 +404,16 @@ p {
   padding-top: 10px;
 }
 
-.resto-text {
-  margin-top: 5px;
-  margin-bottom: 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.resto-petittexte {
-  margin-top: 2px;
-  margin-bottom: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.card-txt {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
-  justify-content: center;
-}
-
 .gridfooter {
   display: flex;
   flex-direction: column;
-  background-color: #4a4a4a;
+  background-color: #3d3d3d;
   color: white;
   font-size: 12px;
   padding-left: 15px;
   padding-top: 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .gridfooter {
     width: 100%;
     flex-direction: row-reverse;
@@ -440,8 +427,7 @@ p {
     width: 100%;
   }
 }
-
-.logofooter {
+.gridfooter .logofooter {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -449,13 +435,12 @@ p {
   max-height: 100%;
   padding-bottom: 10px;
 }
-@media (min-width: 1024px) {
-  .logofooter {
+@media (min-width: 768px) {
+  .gridfooter .logofooter {
     padding-bottom: 0;
   }
 }
-
-.logofooter img {
+.gridfooter .logofooter img {
   display: flex;
   flex-direction: row;
   padding-top: 15px;
@@ -465,23 +450,21 @@ p {
   height: auto;
 }
 @media (min-width: 768px) {
-  .logofooter img {
+  .gridfooter .logofooter img {
     width: 95px;
   }
 }
-
-.logoblanc {
+.gridfooter .logoblanc {
   object-fit: cover;
 }
-
-.liensnav {
+.gridfooter .liensnav {
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   padding-bottom: 20px;
 }
-@media (min-width: 1024px) {
-  .liensnav {
+@media (min-width: 768px) {
+  .gridfooter .liensnav {
     flex-direction: row;
     padding-left: 0;
     margin-right: 80px;
@@ -491,43 +474,38 @@ p {
     margin-top: 20px;
   }
 }
-
-.containerlogotexte {
+.gridfooter .containerlogotexte {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-.alignlogotexte {
+.gridfooter .alignlogotexte {
   display: inline-flex;
 }
-
-.textefooter1 {
+.gridfooter .textefooter1 {
   padding-left: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-.textefooter {
+.gridfooter .textefooter {
   padding-left: 10px;
   display: inline-flex;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-p {
+.gridfooter .gridfooter p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-@media (min-width: 1024px) {
-  .centrage {
+@media (min-width: 768px) {
+  .gridfooter .centrage {
     display: flex;
     gap: 15px;
     margin-left: 40px;
     align-items: center;
   }
 }
+
 .fa-regular.fa-heart:active {
   opacity: 0;
 }
@@ -560,66 +538,6 @@ body {
   }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  font-family: "roboto";
-}
-
-h1 {
-  text-align: center;
-  font-size: 24px;
-}
-
-h2 {
-  font-family: "roboto";
-  font-size: 14px;
-  font-weight: 300;
-  margin-bottom: 0;
-}
-
-h3 {
-  font-family: "roboto";
-  font-size: 14px;
-  font-weight: 500;
-  color: black;
-}
-
-h4 {
-  font-family: "roboto";
-  font-size: 13px;
-  color: black;
-  font-weight: 300;
-}
-
-h5 {
-  text-align: center;
-  font-weight: 50;
-  font-size: 18px;
-  color: rgb(170, 169, 169);
-}
-
-h6 {
-  font-family: "roboto";
-  font-size: 14px;
-  font-weight: 100;
-}
-
-p {
-  font-family: "roboto";
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: white;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0px 2px 5px gray;
-  overflow-x: hidden;
-}
-
 .card:active .casecachee {
   transform: translateX(-53px);
   opacity: 1;
@@ -649,7 +567,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding-right: 25px;
+  padding-right: 20px;
 }
 @media (min-width: 768px) {
   .coeurcard {
@@ -664,6 +582,12 @@ p {
   font-weight: 100;
   transition: all ease-in-out 300ms;
   z-index: 1;
+}
+@media (min-width: 1024px) {
+  .fa-regular.fa-heart {
+    font-size: 18px;
+    opacity: 0.8;
+  }
 }
 
 .fa-regular.fa-heart:active {
@@ -680,6 +604,11 @@ p {
   background-clip: text;
   transition: all ease-in-out 300ms;
   z-index: 2;
+}
+@media (min-width: 1024px) {
+  .fa-solid.fa-heart {
+    font-size: 18px;
+  }
 }
 
 .fa-solid.fa-heart:active {
@@ -705,7 +634,7 @@ p {
   height: 40px;
   border-radius: 25px;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   border: none;
   padding: 10px 40px 10px 40px;
@@ -734,7 +663,7 @@ p {
   padding: 15px 15px 15px 15px;
   right: -55px;
   transform: translateX(0);
-  transition: transform 300ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 @media (min-width: 768px) {
   .casecachee {
@@ -746,7 +675,7 @@ p {
     right: -60px;
     padding: 20px 20px 20px 20px;
     transform: translateX(0);
-    transition: transform 300ms linear;
+    transition: transform 150ms linear;
     opacity: 1;
   }
 }
@@ -756,7 +685,7 @@ p {
   font-size: 13px;
   padding-top: 10px;
   transform: translateX(40px);
-  transition: transform 300ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 @media (min-width: 768px) {
   .prix {
@@ -766,7 +695,7 @@ p {
 @media (min-width: 1024px) {
   .prix {
     transform: translateX(45px);
-    transition: transform 300ms linear;
+    transition: transform 150ms linear;
   }
 }
 
@@ -816,14 +745,6 @@ p {
   }
   .fa-regular.fa-heart:hover {
     opacity: 0;
-  }
-  /***** restaurants ****/
-  .fa-regular.fa-heart {
-    font-size: 18px;
-    opacity: 0.8;
-  }
-  .fa-solid.fa-heart {
-    font-size: 18px;
   }
 }
 /******* large desktop *******/

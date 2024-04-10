@@ -1,6 +1,27 @@
-@mixin formgrid {
+@mixin card_standard {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+    height: 140px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+@mixin degrade {
+    background: linear-gradient($pinkcolor,$purplecolor);
+}
+
+@mixin badge {
+    background-color: $badgecolor;
+    color: $fontbadgecolor;
+}
+
+@mixin btn {
+    border: none;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 15px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

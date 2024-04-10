@@ -1,11 +1,13 @@
 /****** General ***********/
 @import "color";
+@import "police";
 @import "loader";
 @import "header";
 @import "gridrestos";
 @import "footer";
 @import "btnfonctionnement";
 @import "transitions";
+@import "mixin";
 
 * {
     box-sizing: border-box;
@@ -14,15 +16,6 @@
 
 main {
     z-index: 1;
-    @media (min-width: 1024px) {
-            max-width: 1420px;
-            margin:auto;
-    }
-}
-
-.card, .cardspecial {
-    background-color: white;
-    border-radius: 15px;
 }
 
 .fa-solid.fa-heart {
@@ -49,7 +42,6 @@ main {
     animation-fill-mode: both;
 }
 
-
 /****** introduction ******/
 .gridintroduction {
     padding: 20px 15px 30px 15px;
@@ -57,39 +49,36 @@ main {
     @media (min-width:1441px) {
         width: 100%;
     }
-}
-
-.restaurationchoix {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    @media (min-width:1024px) {
-        margin-bottom: 0;
-        margin-top: 25px;
+    .introduction h1 {
+        padding-left: 40px;
+        padding-right: 40px;
     }
-}
-
-.exploration {
-    border-radius: 25px;
-    color: white;
-    font-weight: 500;
-    font-size: 14px;
-    border: none;
-    padding: 12px 12px;
-    box-shadow: 0px 2px 5px gray ;
-    transition:all ease-in-out 300ms ;
-    @include degrade;
-    @media (min-width:1024px) {
+    .restaurationchoix {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        @media (min-width:1024px) {
+            margin-bottom: 0;
+            margin-top: 25px;
+        }
+    }
+    .exploration {
+        border-radius: 25px;
+        color: white;
+        font-weight: 500;
         font-size: 13px;
-    }
-    &:hover {
-        box-shadow: 0px 3px 7px gray ;
-        opacity: 0.8;
+        border: none;
+        padding: 12px 15px;
+        box-shadow: $ombre;
+        transition:all ease-in-out 300ms ;
+        @include degrade;
+        &:hover {
+            box-shadow: 0px 3px 7px gray ;
+            opacity: 0.8;
+        }
     }
 }
-
-
 
 /****** fonctionnement ***********/
 .fonctionnement {
@@ -111,48 +100,17 @@ main {
     @media (min-width:1441px) {
         max-width: 1440px;
     }
-}
-
-
-.titrefonctionnement {
-  display: flex;
-  width: 100%;
-  padding-bottom: 15px;
-    @media (min-width: 768px ) {
-    justify-content: center;
-}
-    @media (min-width:1024px) {
-    padding-bottom: 20px;
-}
-}
-
-.btnchoix {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
-    gap:20px;
-    padding-left: 10px;
-    @media (min-width:768px) {
+    
+    .titrefonctionnement {
+        display: flex;
         width: 100%;
-        height: 50px;
-        flex-wrap: nowrap;
-        gap: 25px;
-        margin-bottom: 0;
-        justify-content: space-between;
-        padding-right: 10px;
+        padding-bottom: 15px;
+        @media (min-width:1024px) {
+            padding-bottom: 20px;
+        }
     }
-  
 }
 
-.btnrestaurants, .menu, .degustation {
-   @include btn;
-    font-size: 13px;
-    font-weight: 600;
-    @media (min-width:1024px) {
-        margin-bottom: 0;
-    }
-}
 
 
 
@@ -161,8 +119,6 @@ main {
     margin: 0;
     padding: 0;
 } 
-
-
 
 html {
     display: flex;
@@ -175,6 +131,5 @@ body {
 .positionnement {
     max-width: 100%;
 }
-
 
 }

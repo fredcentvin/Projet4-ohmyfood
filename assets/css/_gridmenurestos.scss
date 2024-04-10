@@ -2,13 +2,6 @@
 @import "animationdem";
 @import "color";
 
-
-$pinkcolor: #ff79da;
-$purplecolor: #9356dc;
-$badgecolor: #99e2d0;
-$fontbadgecolor: green;
-
-
 .cardglobal {
     display: flex;
     flex-direction: row;
@@ -44,12 +37,12 @@ $fontbadgecolor: green;
     height: 250px;
     object-position: 55% 20%;
     @media (min-width: 768px) {
-            object-position: 55% 58%;
-            height: 270px;
-        }
-        @media (min-width: 1440px) {
-            width:100%;
-        }
+        object-position: 55% 58%;
+        height: 270px;
+    }
+    @media (min-width: 1440px) {
+        width:100%;
+    }
 }
 
 .calque {
@@ -78,8 +71,11 @@ $fontbadgecolor: green;
     width: 100%;
 }
 
-.gridentrees {
-   @include formgrid;
+.formgrid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
 }
 
 .slideinentrees {
@@ -87,8 +83,6 @@ $fontbadgecolor: green;
     transform:scale(1);
     animation-name: slide;
     animation-timing-function: linear;
-   
-   
     @media (min-width: 768px) {
         padding-left: 90px;
         padding-right: 90px; 
@@ -97,11 +91,6 @@ $fontbadgecolor: green;
         padding-left: 120px;
         padding-right: 120px; 
     }
-   
-}
-
-.gridplats {
-  @include formgrid;
 }
 
 .slideinplats {
@@ -110,8 +99,6 @@ $fontbadgecolor: green;
     animation-name: slide;
     animation-timing-function: linear;
     animation-delay: $tempo1;
-
-
     @media (min-width: 768px) {
         padding-left: 90px;
         padding-right: 90px;
@@ -120,11 +107,6 @@ $fontbadgecolor: green;
         padding-left: 120px;
         padding-right: 120px; 
     }
- 
-}
-
-.griddesserts {
-    @include formgrid;
 }
 
 .slideindesserts {
@@ -133,8 +115,6 @@ $fontbadgecolor: green;
     animation-name: slide;
     animation-timing-function: linear;
     animation-delay: $tempo2;
-
-
     @media (min-width: 768px) {
         padding-left: 90px;
         padding-right: 90px;
@@ -143,13 +123,15 @@ $fontbadgecolor: green;
         padding-left: 120px;
         padding-right: 120px; 
     }
-
 }
 
 .titre {
-    padding-bottom: 7px;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 5px;
     border-bottom:5px solid $badgecolor;
     width: 45px;
+    margin-bottom: 7px;
     @media (min-width: 768px) {
         margin-left: 90px;
     }
@@ -157,15 +139,6 @@ $fontbadgecolor: green;
         margin-left: 120px;
         width: 40px;
     }
-}
-
-.titreh2 {
-    font-weight: 300;
-}
-
-.cardmenu {
-    display: flex;
-    width: 100%;
 }
 
 .nomduresto { 
@@ -182,15 +155,46 @@ $fontbadgecolor: green;
     }
 }
 
-.cardresto {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.card-content {
+.cardmenu {
     display: flex;
-    justify-content: space-between;
-    align-items:center; 
+    width: 100%;
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        box-shadow: 0px 3px 5px rgb(214, 213, 213);
+        overflow-x: hidden;
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items:center; 
+    }
+    .card-txt {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+    }
+    .resto-text {
+        margin-top:5px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .resto-petittexte {
+        font-size: 13px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        }    
+    }
 }
 
 .symboleeuro {
@@ -201,29 +205,3 @@ $fontbadgecolor: green;
     margin-bottom: 0;
     padding-top: 10px;
 }
-
-.resto-text {
-    margin-top:5px;
-    margin-bottom: 2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.resto-petittexte {
-    margin-top: 2px;
-    margin-bottom: 5px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-
-}
-
-.card-txt {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content: center;
-}
-
