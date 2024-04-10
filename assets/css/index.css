@@ -1,0 +1,1025 @@
+/****** General ***********/
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "roboto";
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+}
+
+h2 {
+  font-family: "roboto";
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+h3 {
+  font-family: "roboto";
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+h4 {
+  font-family: "roboto";
+  color: black;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 13px;
+  }
+}
+
+h5 {
+  font-family: "roboto";
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(79, 78, 78);
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 13px;
+  }
+}
+
+h6 {
+  font-family: "roboto";
+  font-size: 12px;
+  color: green;
+  font-weight: 500;
+}
+
+p {
+  font-family: "roboto";
+}
+
+.fa-mobile-screen-button {
+  color: grey;
+  font-size: 16px;
+}
+
+.fa-list-ul {
+  color: grey;
+  font-size: 16px;
+}
+
+.fa-store {
+  color: #9356dc;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "roboto";
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+}
+
+h2 {
+  font-family: "roboto";
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+h3 {
+  font-family: "roboto";
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+h4 {
+  font-family: "roboto";
+  color: black;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 13px;
+  }
+}
+
+h5 {
+  font-family: "roboto";
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(79, 78, 78);
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 13px;
+  }
+}
+
+h6 {
+  font-family: "roboto";
+  font-size: 12px;
+  color: green;
+  font-weight: 500;
+}
+
+p {
+  font-family: "roboto";
+}
+
+.fa-mobile-screen-button {
+  color: grey;
+  font-size: 16px;
+}
+
+.fa-list-ul {
+  color: grey;
+  font-size: 16px;
+}
+
+.fa-store {
+  color: #9356dc;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@keyframes loadeffect {
+  0% {
+    z-index: -10;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    z-index: 4;
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    display: block;
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: loadeffect 3200ms linear;
+  z-index: 4;
+}
+
+.animcircle {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #ff79da;
+  border-bottom: 10px solid #9356dc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transform: rotate(0);
+  animation-name: rotate;
+  animation: spin 800ms linear;
+  animation-iteration-count: 3;
+}
+
+.logo1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .logo1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.logo1 img {
+  object-fit: cover;
+  width: 155px;
+  height: 25px;
+}
+
+.retour {
+  display: flex;
+  width: 20%;
+}
+
+.geographicposition {
+  display: flex;
+  justify-content: center;
+  background-color: #dfdede;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  box-shadow: inset 0px 0px 3px rgb(179, 179, 179), 0px 0px 3px rgb(63, 63, 63);
+}
+@media (min-width: 1024px) {
+  .geographicposition {
+    box-shadow: unset;
+    padding-left: 65px;
+  }
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: #dfdede;
+}
+
+::placeholder {
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 1024px) {
+  .searchbar {
+    display: flex;
+    gap: 15px;
+  }
+}
+.titresectionresto {
+  display: flex;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .titresectionresto {
+    padding-left: 10px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .titresectionresto {
+    padding-left: 70px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+}
+
+.badgerectangle {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99e2d0;
+  color: green;
+}
+@media (min-width: 768px) {
+  .badgerectangle {
+    top: 10px;
+    right: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .badgerectangle {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.gridcards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 35px 20px 35px 20px;
+  background-color: #f6f6f6;
+}
+@media (min-width: 768px) {
+  .gridcards {
+    margin: 50px 0 0px 0;
+    padding: 15px 10px 30px 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .gridcards {
+    margin: 50px 0 0px 0;
+    padding: 15px 50px 30px 50px;
+  }
+}
+
+.cardresto {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .cardresto {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.cardresto .card img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 55%;
+  height: 140px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  object-position: 50% 85%;
+}
+@media (min-width: 768px) {
+  .cardresto .card img {
+    object-position: 50% 65%;
+    height: 170px;
+  }
+}
+@media (min-width: 1024px) {
+  .cardresto .card img {
+    object-position: 50% 65%;
+    height: 120px;
+  }
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.cardresto .cardspecial img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 55%;
+  height: 140px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  object-position: 50% 90%;
+}
+@media (min-width: 768px) {
+  .cardresto .cardspecial img {
+    object-position: 50% 85%;
+    height: 170px;
+  }
+}
+@media (min-width: 1024px) {
+  .cardresto .cardspecial img {
+    object-position: 50% 67%;
+    height: 120px;
+  }
+}
+
+.cardresto .cardspecial1 img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 55%;
+  height: 140px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  object-position: 50% 60%;
+}
+@media (min-width: 768px) {
+  .cardresto .cardspecial1 img {
+    object-position: 50% 60%;
+    height: 170px;
+  }
+}
+@media (min-width: 1024px) {
+  .cardresto .cardspecial1 img {
+    object-position: 50% 58%;
+    height: 120px;
+  }
+}
+
+.containercontenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 45px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.resto-text, .resto-petittexte {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-txt {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.coeurcard {
+  border: none;
+  background-color: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .restaurantscards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 40px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .restaurantscards {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardspecial img {
+    object-fit: cover;
+  }
+}
+@media (min-width: 768px) {
+  .groupresto {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .groupresto {
+    gap: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .charonne, .citerouge, .foliemericourt, .menilmontant {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .resto-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.gridfooter {
+  display: flex;
+  flex-direction: column;
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+@media (min-width: 1024px) {
+  .gridfooter {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 30px 20px 80px;
+  }
+}
+@media (min-width: 1441px) {
+  .gridfooter {
+    width: 100%;
+  }
+}
+
+.logofooter {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .logofooter {
+    padding-bottom: 0;
+  }
+}
+
+.logofooter img {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-left: 10px;
+  filter: invert(100%);
+  width: 95px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .logofooter img {
+    width: 95px;
+  }
+}
+
+.logoblanc {
+  object-fit: cover;
+}
+
+.liensnav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .liensnav {
+    flex-direction: row;
+    padding-left: 0;
+    margin-right: 80px;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 0;
+    margin-top: 20px;
+  }
+}
+
+.containerlogotexte {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.alignlogotexte {
+  display: inline-flex;
+}
+
+.textefooter1 {
+  padding-left: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.textefooter {
+  padding-left: 10px;
+  display: inline-flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1024px) {
+  .centrage {
+    display: flex;
+    gap: 15px;
+    margin-left: 40px;
+    align-items: center;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "roboto";
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px;
+  }
+}
+
+h2 {
+  font-family: "roboto";
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+h3 {
+  font-family: "roboto";
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+h4 {
+  font-family: "roboto";
+  color: black;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 13px;
+  }
+}
+
+h5 {
+  font-family: "roboto";
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(79, 78, 78);
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 13px;
+  }
+}
+
+h6 {
+  font-family: "roboto";
+  font-size: 12px;
+  color: green;
+  font-weight: 500;
+}
+
+p {
+  font-family: "roboto";
+}
+
+.fa-mobile-screen-button {
+  color: grey;
+  font-size: 16px;
+}
+
+.fa-list-ul {
+  color: grey;
+  font-size: 16px;
+}
+
+.fa-store {
+  color: #9356dc;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btngeneric {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 15px 15px 25px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 2px 7px rgb(179, 179, 179);
+  font-size: 13px;
+  font-weight: 600;
+  color: green;
+}
+@media (min-width: 768px) {
+  .btngeneric {
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .btngeneric {
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+}
+
+.cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  margin-left: -7px;
+  position: absolute;
+  left: 25px;
+  background-color: #9356dc;
+}
+@media (min-width: 768px) {
+  .cercle {
+    margin-right: 0;
+    position: unset;
+    margin-left: -10px;
+  }
+}
+
+.btntexte {
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  padding-left: 5px;
+}
+
+.btnicone {
+  display: flex;
+  width: 10%;
+}
+
+.btnnumero {
+  display: flex;
+  align-items: center;
+  width: 5%;
+}
+
+.fa-regular.fa-heart:active {
+  opacity: 0;
+}
+
+.fa-solid.fa-heart:active {
+  font-weight: 900;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .fa-regular.fa-heart:hover {
+    opacity: 0;
+  }
+  .fa-solid.fa-heart:hover {
+    font-weight: 900;
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main {
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  main {
+    max-width: 1420px;
+    margin: auto;
+  }
+}
+
+.card, .cardspecial {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.fa-solid.fa-heart {
+  font-size: 27px;
+  color: transparent;
+  position: absolute;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+  animation-fill-mode: both;
+  background-image: linear-gradient(#ff79da, #9356dc);
+}
+
+.fa-regular.fa-heart {
+  color: black;
+  font-size: 26px;
+  font-weight: 100;
+  opacity: 1;
+  transition: opacity ease-in-out 300ms;
+}
+
+.coeurcard:focus {
+  opacity: 1;
+  animation-fill-mode: both;
+}
+
+/****** introduction ******/
+.gridintroduction {
+  padding: 20px 15px 30px 15px;
+  background-color: #f6f6f6;
+}
+@media (min-width: 1441px) {
+  .gridintroduction {
+    width: 100%;
+  }
+}
+
+.restaurationchoix {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurationchoix {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+}
+
+.exploration {
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  padding: 12px 12px;
+  box-shadow: 0px 2px 5px gray;
+  transition: all ease-in-out 300ms;
+  background: linear-gradient(#ff79da, #9356dc);
+}
+@media (min-width: 1024px) {
+  .exploration {
+    font-size: 13px;
+  }
+}
+.exploration:hover {
+  box-shadow: 0px 3px 7px gray;
+  opacity: 0.8;
+}
+
+/****** fonctionnement ***********/
+.fonctionnement {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .fonctionnement {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement {
+    margin: 40px 120px 30px 120px;
+  }
+}
+@media (min-width: 1441px) {
+  .fonctionnement {
+    max-width: 1440px;
+  }
+}
+
+.titrefonctionnement {
+  display: flex;
+  width: 100%;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .titrefonctionnement {
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .titrefonctionnement {
+    padding-bottom: 20px;
+  }
+}
+
+.btnchoix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 20px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .btnchoix {
+    width: 100%;
+    height: 50px;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+}
+
+.btnrestaurants, .menu, .degustation {
+  border: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .btnrestaurants, .menu, .degustation {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1441px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    display: flex;
+  }
+  body {
+    width: 100%;
+  }
+  .positionnement {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

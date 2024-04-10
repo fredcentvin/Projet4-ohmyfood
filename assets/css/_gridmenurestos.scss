@@ -1,0 +1,228 @@
+@import "mixin";
+@import "animationdem";
+@import "color";
+
+
+$pinkcolor: #ff79da;
+$purplecolor: #9356dc;
+$badgecolor: #99e2d0;
+$fontbadgecolor: green;
+
+
+.cardglobal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    top: -50px;
+    @media (min-width: 768px) {
+        top: -30px
+    }
+}
+
+.entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+        justify-content: center;
+        gap: 20px;
+    }
+    @media (min-width: 1024px) {
+        gap: 30px;
+    }
+}
+
+.photorestocard img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-position: 55% 20%;
+    @media (min-width: 768px) {
+            object-position: 55% 58%;
+            height: 270px;
+        }
+        @media (min-width: 1440px) {
+            width:100%;
+        }
+}
+
+.calque {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (min-width: 768px) {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    @media (min-width:1024px) {
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+}
+
+.masque {
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.gridmenu {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gridentrees {
+   @include formgrid;
+}
+
+.slideinentrees {
+    animation-duration: .7s;
+    transform:scale(1);
+    animation-name: slide;
+    animation-timing-function: linear;
+   
+   
+    @media (min-width: 768px) {
+        padding-left: 90px;
+        padding-right: 90px; 
+    }
+    @media (min-width: 1024px) {
+        padding-left: 120px;
+        padding-right: 120px; 
+    }
+   
+}
+
+.gridplats {
+  @include formgrid;
+}
+
+.slideinplats {
+    animation-duration: .7s;
+    transform:scale(1);
+    animation-name: slide;
+    animation-timing-function: linear;
+    animation-delay: $tempo1;
+
+
+    @media (min-width: 768px) {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    @media (min-width: 1024px) {
+        padding-left: 120px;
+        padding-right: 120px; 
+    }
+ 
+}
+
+.griddesserts {
+    @include formgrid;
+}
+
+.slideindesserts {
+    animation-duration: .7s;
+    transform:scale(1);
+    animation-name: slide;
+    animation-timing-function: linear;
+    animation-delay: $tempo2;
+
+
+    @media (min-width: 768px) {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    @media (min-width: 1024px) {
+        padding-left: 120px;
+        padding-right: 120px; 
+    }
+
+}
+
+.titre {
+    padding-bottom: 7px;
+    border-bottom:5px solid $badgecolor;
+    width: 45px;
+    @media (min-width: 768px) {
+        margin-left: 90px;
+    }
+    @media (min-width: 1024px) {
+        margin-left: 120px;
+        width: 40px;
+    }
+}
+
+.titreh2 {
+    font-weight: 300;
+}
+
+.cardmenu {
+    display: flex;
+    width: 100%;
+}
+
+.nomduresto { 
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    padding-left: 5px;
+    padding-bottom: 0;
+    @media (min-width: 768px) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.cardresto {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items:center; 
+}
+
+.symboleeuro {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.resto-text {
+    margin-top:5px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.resto-petittexte {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+

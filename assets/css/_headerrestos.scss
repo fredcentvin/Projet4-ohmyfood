@@ -1,0 +1,33 @@
+.containerheader {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    @media (min-width: 1024px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.retour {
+    display: flex;
+    width: 10%;
+    padding-left: 15px;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90%;
+    padding-right: 40px;
+    @media (min-width: 768px) {
+        padding-right: 100px;
+    }
+}
+
+.logo1 img {
+    object-fit:cover;
+    width: 155px;
+    height: 25px;
+}

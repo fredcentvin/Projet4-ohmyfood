@@ -1,0 +1,112 @@
+$pinkcolor: #ff79da;
+$purplecolor: #9356dc;
+$fondcolor: #f6f6f6;
+$badgecolor: #99e2d0;
+$fontbadgecolor: green;
+
+
+@mixin degrade {
+    background: linear-gradient($pinkcolor,$purplecolor);
+}
+
+@mixin badge {
+    background-color: $badgecolor;
+    color: $fontbadgecolor;
+}
+
+@mixin ombre {
+    box-shadow: 0px 2px 5px gray;
+}
+
+@mixin btn {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: "roboto";
+}
+
+
+h1{
+    font-family: "roboto";
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+    @media (min-width: 1024px) {
+            font-size: 30px;
+            font-weight: 700;
+            padding-bottom: 25px;
+        }
+}
+
+h2 {
+    font-family: "roboto";
+    font-weight: 600;
+    @media (min-width:1024px){
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+h3 {
+    font-family: "roboto";
+    font-size: 16px;
+    color: black;
+    margin: 0;
+    @media (min-width:1024px){
+        font-size: 14px;
+    }
+}
+
+h4 {
+    font-family: "roboto";
+    color:black;
+    font-weight: 300;
+    @media (min-width:1024px){
+        font-size: 13px;
+    }
+}
+
+h5 {
+    font-family: "roboto";
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(79, 78, 78);
+    @media (min-width:1024px){
+        font-size: 13px;
+    }
+}
+
+h6 {
+    font-family: "roboto";
+    font-size: 12px;
+    color:$fontbadgecolor;
+    font-weight: 500;
+}
+
+p {
+    font-family: "roboto";
+}
+
+.fa-mobile-screen-button {
+    color: grey;
+    font-size: 16px;
+}
+
+.fa-list-ul {
+    color: grey;
+    font-size: 16px;
+}
+
+.fa-store {
+    color: $purplecolor;
+    font-weight: 400;
+    font-size: 16px;
+}

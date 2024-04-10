@@ -1,0 +1,63 @@
+@import "color";
+
+
+@keyframes loadeffect {
+    0% {
+       z-index: -10;
+       opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+   
+    100% {
+        z-index: 4;
+        opacity: 1;
+   }
+}
+
+@keyframes spin {
+    from{
+        display: block;
+        transform: rotate(0deg);    
+    }
+    to {
+         transform : rotate(360deg);   
+          
+    }
+}
+
+.loader {
+    background-color: white;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    animation: loadeffect 3200ms linear;
+    z-index: 4; 
+}
+
+.animcircle {
+    display: none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border:10px solid #f3f3f3;
+    border-top: 10px solid $pinkcolor;
+    border-bottom: 10px solid $purplecolor;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: rotate(0);
+    animation-name: rotate;
+    animation: spin 800ms linear; 
+    animation-iteration-count: 3;
+}

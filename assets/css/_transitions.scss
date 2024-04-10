@@ -1,0 +1,21 @@
+.fa-regular.fa-heart:active {
+    opacity: 0;
+}
+
+.fa-solid.fa-heart:active {
+    font-weight: 900;
+    opacity: 1;
+}
+
+
+@media (min-width: 1024px) {
+.fa-regular.fa-heart:hover {
+    opacity: 0;
+}
+
+.fa-solid.fa-heart:hover {
+    font-weight: 900;
+    opacity: 1;
+}
+}
+
