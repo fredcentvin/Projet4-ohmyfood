@@ -16,18 +16,46 @@
     @media (min-width: 768px) {
         top: -30px
     }
-}
-
-.entete {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    @media (min-width: 768px) {
-        justify-content: center;
-        gap: 20px;
-    }
-    @media (min-width: 1024px) {
-        gap: 30px;
+    .gridmenu {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        .entete {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @media (min-width: 768px) {
+                justify-content: center;
+                gap: 20px;
+            }
+            @media (min-width: 1024px) {
+                gap: 30px;
+            }
+            .nomduresto { 
+                font-family: "Shrikhand";
+                font-style: italic;
+                font-weight: 400;
+                text-align: left;
+                display: flex;
+                padding-left: 5px;
+                padding-bottom: 0;
+                @media (min-width: 768px) {
+                    font-size: 24px;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+            }
+            .coeurcard {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                padding-right: 20px;
+                @media (min-width: 768px) {
+                    padding-top: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -58,17 +86,10 @@
         margin-left: 130px;
         margin-right: 130px;
     }
-}
-
-.masque {
-    background-color: #f6f6f6;
-    position: relative;
-}
-
-.gridmenu {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
+    .masque {
+        background-color: #f6f6f6;
+        position: relative;
+    }
 }
 
 .formgrid {
@@ -76,82 +97,64 @@
     flex-direction: column;
     gap: 5px;
     margin-bottom: 15px;
-}
-
-.slideinentrees {
-    animation-duration: .7s;
-    transform:scale(1);
-    animation-name: slide;
-    animation-timing-function: linear;
-    @media (min-width: 768px) {
-        padding-left: 90px;
-        padding-right: 90px; 
+    .titre {
+        font-weight: 300;
+        font-size: 14px;
+        padding-bottom: 5px;
+        border-bottom:5px solid $badgecolor;
+        width: 45px;
+        margin-bottom: 7px;
+        @media (min-width: 768px) {
+            margin-left: 90px;
+        }
+        @media (min-width: 1024px) {
+            margin-left: 120px;
+            width: 40px;
+        }
     }
-    @media (min-width: 1024px) {
-        padding-left: 120px;
-        padding-right: 120px; 
+    .slideinentrees {
+        animation-duration: .7s;
+        transform:scale(1);
+        animation-name: slide;
+        animation-timing-function: linear;
+        @media (min-width: 768px) {
+            padding-left: 90px;
+            padding-right: 90px; 
+        }
+        @media (min-width: 1024px) {
+            padding-left: 120px;
+            padding-right: 120px; 
+        }
     }
-}
-
-.slideinplats {
-    animation-duration: .7s;
-    transform:scale(1);
-    animation-name: slide;
-    animation-timing-function: linear;
-    animation-delay: $tempo1;
-    @media (min-width: 768px) {
-        padding-left: 90px;
-        padding-right: 90px;
+    .slideinplats {
+        animation-duration: .7s;
+        transform:scale(1);
+        animation-name: slide;
+        animation-timing-function: linear;
+        animation-delay: $tempo1;
+        @media (min-width: 768px) {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+        @media (min-width: 1024px) {
+            padding-left: 120px;
+            padding-right: 120px; 
+        }
     }
-    @media (min-width: 1024px) {
-        padding-left: 120px;
-        padding-right: 120px; 
-    }
-}
-
-.slideindesserts {
-    animation-duration: .7s;
-    transform:scale(1);
-    animation-name: slide;
-    animation-timing-function: linear;
-    animation-delay: $tempo2;
-    @media (min-width: 768px) {
-        padding-left: 90px;
-        padding-right: 90px;
-    }
-    @media (min-width: 1024px) {
-        padding-left: 120px;
-        padding-right: 120px; 
-    }
-}
-
-.titre {
-    font-weight: 300;
-    font-size: 16px;
-    padding-bottom: 5px;
-    border-bottom:5px solid $badgecolor;
-    width: 45px;
-    margin-bottom: 7px;
-    @media (min-width: 768px) {
-        margin-left: 90px;
-    }
-    @media (min-width: 1024px) {
-        margin-left: 120px;
-        width: 40px;
-    }
-}
-
-.nomduresto { 
-    font-family: "Shrikhand";
-    font-style: italic;
-    font-weight: 400;
-    text-align: left;
-    display: flex;
-    padding-left: 5px;
-    padding-bottom: 0;
-    @media (min-width: 768px) {
-        margin-top: 30px;
-        margin-bottom: 20px;
+    .slideindesserts {
+        animation-duration: .7s;
+        transform:scale(1);
+        animation-name: slide;
+        animation-timing-function: linear;
+        animation-delay: $tempo2;
+        @media (min-width: 768px) {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+        @media (min-width: 1024px) {
+            padding-left: 120px;
+            padding-right: 120px; 
+        }
     }
 }
 
@@ -197,11 +200,4 @@
     }
 }
 
-.symboleeuro {
-    color: black;
-    font-size: 13px;
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-}
+

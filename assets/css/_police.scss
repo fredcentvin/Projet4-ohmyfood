@@ -4,17 +4,16 @@ a {
     font-family: "roboto";
 }
 
-
 h1{
     font-family: "roboto";
     text-align: center;
     font-size: 26px;
     padding-bottom: 15px;
     @media (min-width: 1024px) {
-            font-size: 30px;
-            font-weight: 700;
-            padding-bottom: 25px;
-        }
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 25px;
+    }
 }
 
 h2 {

@@ -207,6 +207,16 @@ input {
     gap: 15px;
   }
 }
+.card img {
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .cardspecial img {
+    object-fit: cover;
+  }
+}
+
 .badgerectangle {
   display: flex;
   align-items: center;
@@ -274,6 +284,42 @@ input {
     padding-top: 20px;
   }
 }
+@media (min-width: 768px) {
+  .gridcards .restaurantscards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .gridcards .restaurantscards {
+    padding-left: 70px;
+    padding-right: 70px;
+    max-width: 1440px;
+  }
+}
+@media (min-width: 768px) {
+  .gridcards .restaurantscards .groupresto {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .gridcards .restaurantscards .groupresto {
+    gap: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .gridcards .restaurantscards .resto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
 
 .cardresto {
   margin-top: 15px;
@@ -291,6 +337,7 @@ input {
   }
 }
 
+/****** traitement images ******/
 .cardresto .card img {
   width: 100%;
   object-fit: cover;
@@ -313,10 +360,6 @@ input {
     object-position: 50% 65%;
     height: 120px;
   }
-}
-
-.card img {
-  object-fit: cover;
 }
 
 .cardresto .cardspecial img {
@@ -386,6 +429,12 @@ input {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+@media (min-width: 768px) {
+  .containercontenu .resto-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 .containercontenu .card-txt {
   display: flex;
   flex-direction: column;
@@ -422,56 +471,6 @@ input {
   font-weight: 100;
   opacity: 1;
   transition: opacity ease-in-out 300ms;
-}
-
-@media (min-width: 768px) {
-  .restaurantscards {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurantscards {
-    padding-left: 70px;
-    padding-right: 70px;
-    max-width: 1440px;
-  }
-}
-@media (min-width: 768px) {
-  .restaurantscards .groupresto {
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    gap: 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurantscards .groupresto {
-    gap: 80px;
-  }
-}
-@media (min-width: 768px) {
-  .restaurantscards .resto {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  .cardspecial img {
-    object-fit: cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .resto-text {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 }
 
 .gridfooter {
