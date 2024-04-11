@@ -1,7 +1,5 @@
 @import "color";
 
-
-
 .btnchoix {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +25,7 @@
             margin-bottom: 0;
         }
     }
-     .btngeneric{
+    .btngeneric{
         width: 100%;
         display: inline-flex;
         align-items: center;
@@ -66,24 +64,24 @@
         display:flex;
         align-items: center;
         width: 5%;
+        .cercle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            color: white; 
+            margin-left: -7px;
+            position: absolute;
+            left: 25px;
+            background-color:  $purplecolor;
+            @media (min-width: 768px) {
+                margin-right: 0;
+                position: unset;
+                margin-left: -10px;
+            }
+        }
     }
 }
 
-.cercle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    color: white; 
-    margin-left: -7px;
-    position: absolute;
-    left: 25px;
-    background-color:  $purplecolor;
-    @media (min-width: 768px) {
-        margin-right: 0;
-        position: unset;
-        margin-left: -10px;
-    }
-}

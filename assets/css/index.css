@@ -402,6 +402,27 @@ input {
   max-height: 100%;
   padding-right: 20px;
 }
+.containercontenu .coeurcard:focus {
+  opacity: 1;
+  animation-fill-mode: both;
+}
+.containercontenu .fa-solid.fa-heart {
+  font-size: 27px;
+  color: transparent;
+  position: absolute;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+  animation-fill-mode: both;
+  background-image: linear-gradient(#ff79da, #9356dc);
+}
+.containercontenu .fa-regular.fa-heart {
+  color: black;
+  font-size: 26px;
+  font-weight: 100;
+  opacity: 1;
+  transition: opacity ease-in-out 300ms;
+}
 
 @media (min-width: 768px) {
   .restaurantscards {
@@ -633,8 +654,7 @@ input {
   align-items: center;
   width: 5%;
 }
-
-.cercle {
+.btnchoix .btnnumero .cercle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,7 +668,7 @@ input {
   background-color: #9356dc;
 }
 @media (min-width: 768px) {
-  .cercle {
+  .btnchoix .btnnumero .cercle {
     margin-right: 0;
     position: unset;
     margin-left: -10px;
@@ -677,33 +697,15 @@ input {
   box-sizing: border-box;
   margin: 0;
 }
+@media (min-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 main {
   z-index: 1;
-}
-
-.fa-solid.fa-heart {
-  font-size: 27px;
-  color: transparent;
-  position: absolute;
-  background-clip: text;
-  opacity: 0;
-  transition: opacity ease-in-out 300ms;
-  animation-fill-mode: both;
-  background-image: linear-gradient(#ff79da, #9356dc);
-}
-
-.fa-regular.fa-heart {
-  color: black;
-  font-size: 26px;
-  font-weight: 100;
-  opacity: 1;
-  transition: opacity ease-in-out 300ms;
-}
-
-.coeurcard:focus {
-  opacity: 1;
-  animation-fill-mode: both;
 }
 
 /****** introduction ******/
@@ -787,10 +789,6 @@ main {
 }
 
 @media (min-width: 1441px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
   html {
     display: flex;
   }
