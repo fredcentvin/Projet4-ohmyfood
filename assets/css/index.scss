@@ -13,7 +13,6 @@
     box-sizing: border-box;
     margin: 0;
     @media (min-width:1440px) {
-        margin: 0;
         padding: 0;
     }
 }
@@ -79,6 +78,7 @@ main {
     }
     @media (min-width:1441px) {
         max-width: 1440px;
+        margin-top: 50px;
     }
     
     .titrefonctionnement {
@@ -95,16 +95,10 @@ main {
 
 
 @media (min-width:1441px) {
-html {
-    display: flex;
-}
 
 body {
     width:100%;    
 }
 
-.positionnement {
-    max-width: 100%;
-}
 
 }

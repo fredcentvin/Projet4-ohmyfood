@@ -218,28 +218,12 @@ input {
 }
 
 .badgerectangle {
-  display: flex;
-  align-items: center;
-  height: 30px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 8px 8px 8px 8px;
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: #99e2d0;
   color: green;
-}
-@media (min-width: 768px) {
-  .badgerectangle {
-    top: 10px;
-    right: 10px;
-  }
-}
-@media (min-width: 1024px) {
-  .badgerectangle {
-    top: 10px;
-    right: 10px;
-  }
 }
 
 .card, .cardspecial, .cardspecial1 {
@@ -266,6 +250,12 @@ input {
     padding: 15px 50px 30px 50px;
   }
 }
+@media (min-width: 1440px) {
+  .gridcards {
+    margin: auto;
+    margin-top: 50px;
+  }
+}
 .gridcards .titresectionresto {
   display: flex;
   width: 100%;
@@ -284,6 +274,11 @@ input {
     padding-top: 20px;
   }
 }
+@media (min-width: 1440px) {
+  .gridcards .titresectionresto {
+    margin: auto;
+  }
+}
 @media (min-width: 768px) {
   .gridcards .restaurantscards {
     display: flex;
@@ -297,7 +292,6 @@ input {
   .gridcards .restaurantscards {
     padding-left: 70px;
     padding-right: 70px;
-    max-width: 1440px;
   }
 }
 @media (min-width: 768px) {
@@ -311,6 +305,12 @@ input {
 @media (min-width: 1024px) {
   .gridcards .restaurantscards .groupresto {
     gap: 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .gridcards .restaurantscards .groupresto {
+    max-width: 1440px;
+    margin: auto;
   }
 }
 @media (min-width: 768px) {
@@ -347,66 +347,20 @@ input {
   border-top-right-radius: 15px;
   margin-top: 2px;
   margin-bottom: 10px;
-  object-position: 50% 85%;
 }
 @media (min-width: 768px) {
   .cardresto .card img {
-    object-position: 50% 65%;
     height: 170px;
   }
 }
 @media (min-width: 1024px) {
   .cardresto .card img {
-    object-position: 50% 65%;
     height: 120px;
   }
 }
-
-.cardresto .cardspecial img {
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 55%;
-  height: 140px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  object-position: 50% 90%;
-}
-@media (min-width: 768px) {
-  .cardresto .cardspecial img {
-    object-position: 50% 85%;
-    height: 170px;
-  }
-}
-@media (min-width: 1024px) {
-  .cardresto .cardspecial img {
-    object-position: 50% 67%;
-    height: 120px;
-  }
-}
-
-.cardresto .cardspecial1 img {
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 55%;
-  height: 140px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 2px;
-  margin-bottom: 10px;
-  object-position: 50% 60%;
-}
-@media (min-width: 768px) {
-  .cardresto .cardspecial1 img {
-    object-position: 50% 60%;
-    height: 170px;
-  }
-}
-@media (min-width: 1024px) {
-  .cardresto .cardspecial1 img {
-    object-position: 50% 58%;
-    height: 120px;
+@media (min-width: 1440px) {
+  .cardresto .card img {
+    height: 180px;
   }
 }
 
@@ -550,6 +504,7 @@ input {
 }
 .gridfooter .alignlogotexte {
   display: inline-flex;
+  align-items: center;
 }
 .gridfooter .textefooter1 {
   padding-left: 14px;
@@ -698,7 +653,6 @@ input {
 }
 @media (min-width: 1440px) {
   * {
-    margin: 0;
     padding: 0;
   }
 }
@@ -774,6 +728,7 @@ main {
 @media (min-width: 1441px) {
   .fonctionnement {
     max-width: 1440px;
+    margin-top: 50px;
   }
 }
 .fonctionnement .titrefonctionnement {
@@ -788,14 +743,8 @@ main {
 }
 
 @media (min-width: 1441px) {
-  html {
-    display: flex;
-  }
   body {
     width: 100%;
-  }
-  .positionnement {
-    max-width: 100%;
   }
 }
 

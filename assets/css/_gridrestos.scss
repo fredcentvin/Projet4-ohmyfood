@@ -10,24 +10,12 @@
     }
 }
 
-.badgerectangle {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    padding-left:8px;
-    padding-right: 8px;
+.badgerectangle {  
+    padding: 8px 8px 8px 8px;
     position: absolute;
     top:10px;
     right: 10px;
     @include badge;
-    @media (min-width: 768px) {
-        top:10px;
-        right: 10px;
-    }
-    @media (min-width: 1024px) {
-        top:10px;
-        right: 10px;
-    }
 }
 
 .card, .cardspecial, .cardspecial1 {
@@ -49,6 +37,10 @@
         margin: 50px 0 0px 0;
         padding: 15px 50px 30px 50px; 
     }
+    @media (min-width:1440px) {
+        margin: auto;
+        margin-top: 50px
+    }
     .titresectionresto {
         display: flex;
         width: 100%;
@@ -62,6 +54,9 @@
             padding-bottom: 30px;
             padding-top: 20px;
         }
+        @media (min-width:1440px) {
+            margin: auto;
+        }
     }
     .restaurantscards {
         @media (min-width: 768px) {
@@ -74,7 +69,6 @@
         @media (min-width: 1024px) {
          padding-left: 70px;
             padding-right: 70px; 
-            max-width: 1440px;
         }
         .groupresto {
             @media (min-width: 768px){
@@ -85,6 +79,10 @@
             }   
             @media (min-width: 1024px) {
                 gap: 80px;   
+            }
+            @media (min-width:1440px) {
+                max-width: 1440px;
+                margin: auto;
             }
         }
         .resto {
@@ -114,42 +112,17 @@
 /****** traitement images ******/
 .cardresto .card img  {
     @include card_standard;
-    object-position: 50% 85%;
-    @media (min-width:768px) {
-        object-position: 50% 65%;
+    @media (min-width:768px) { 
         height: 170px;
     }
-    @media (min-width:1024px) {
-        object-position: 50% 65%;
+    @media (min-width:1024px) { 
         height: 120px;
+    }
+    @media (min-width:1440px) {
+        height: 180px;
     }
 }
 
-.cardresto .cardspecial img  {
-  @include card_standard;
-    object-position: 50% 90%;
-    @media (min-width:768px) {
-        object-position: 50% 85%;
-        height: 170px;
-    }
-    @media (min-width: 1024px) {
-        object-position: 50% 67%;
-        height: 120px;
-    }
-}
-
-.cardresto .cardspecial1 img  {
-   @include card_standard;
-    object-position: 50% 60%;
-    @media (min-width:768px) {
-        object-position: 50% 60%;
-        height: 170px;
-    }
-    @media (min-width: 1024px) {
-        object-position: 50% 58%;
-        height: 120px;
-    }
-}
 
 .containercontenu {
     display: flex;
