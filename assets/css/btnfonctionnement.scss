@@ -1,4 +1,4 @@
-@import "color";
+@import "colors";
 
 .btnchoix {
     display: flex;
@@ -37,12 +37,6 @@
         font-weight: 600;
         color: $fontbadgecolor;
         @media (min-width: 768px) {
-            padding: 0;
-            justify-content: flex-start;
-            flex-wrap: nowrap;
-            gap: 10px;
-        }
-        @media (min-width: 1024px) {
             padding: 0;
             justify-content: flex-start;
             flex-wrap: nowrap;

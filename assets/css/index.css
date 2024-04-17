@@ -211,12 +211,6 @@ input {
   object-fit: cover;
 }
 
-@media (min-width: 768px) {
-  .cardspecial img {
-    object-fit: cover;
-  }
-}
-
 .badgerectangle {
   padding: 8px 8px 8px 8px;
   position: absolute;
@@ -225,8 +219,11 @@ input {
   background-color: #99e2d0;
   color: green;
 }
+.badgerectangle p {
+  font-size: 13px;
+}
 
-.card, .cardspecial, .cardspecial1 {
+.card {
   background-color: white;
   border-radius: 15px;
 }
@@ -240,13 +237,12 @@ input {
 }
 @media (min-width: 768px) {
   .gridcards {
-    margin: 50px 0 0px 0;
+    margin: 50px 0 0 0;
     padding: 15px 10px 30px 10px;
   }
 }
 @media (min-width: 1024px) {
   .gridcards {
-    margin: 50px 0 0px 0;
     padding: 15px 50px 30px 50px;
   }
 }
@@ -255,10 +251,6 @@ input {
     margin: auto;
     margin-top: 50px;
   }
-}
-.gridcards .titresectionresto {
-  display: flex;
-  width: 100%;
 }
 @media (min-width: 768px) {
   .gridcards .titresectionresto {
@@ -270,13 +262,13 @@ input {
 @media (min-width: 1024px) {
   .gridcards .titresectionresto {
     padding-left: 70px;
-    padding-bottom: 30px;
-    padding-top: 20px;
   }
 }
 @media (min-width: 1440px) {
   .gridcards .titresectionresto {
+    width: 1440px;
     margin: auto;
+    align-self: flex-start;
   }
 }
 @media (min-width: 768px) {
@@ -337,7 +329,6 @@ input {
   }
 }
 
-/****** traitement images ******/
 .cardresto .card img {
   width: 100%;
   object-fit: cover;
@@ -390,8 +381,6 @@ input {
   }
 }
 .containercontenu .card-txt {
-  display: flex;
-  flex-direction: column;
   padding-left: 10px;
   padding-bottom: 5px;
 }
@@ -476,9 +465,6 @@ input {
   .gridfooter .logofooter img {
     width: 95px;
   }
-}
-.gridfooter .logoblanc {
-  object-fit: cover;
 }
 .gridfooter .liensnav {
   display: flex;
@@ -577,14 +563,6 @@ input {
   color: green;
 }
 @media (min-width: 768px) {
-  .btnchoix .btngeneric {
-    padding: 0;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 10px;
-  }
-}
-@media (min-width: 1024px) {
   .btnchoix .btngeneric {
     padding: 0;
     justify-content: flex-start;
@@ -725,26 +703,18 @@ main {
     margin: 40px 120px 30px 120px;
   }
 }
-@media (min-width: 1441px) {
+@media (min-width: 1440px) {
   .fonctionnement {
-    max-width: 1440px;
     margin-top: 50px;
+    align-content: center;
   }
 }
 .fonctionnement .titrefonctionnement {
-  display: flex;
-  width: 100%;
   padding-bottom: 15px;
 }
 @media (min-width: 1024px) {
   .fonctionnement .titrefonctionnement {
     padding-bottom: 20px;
-  }
-}
-
-@media (min-width: 1441px) {
-  body {
-    width: 100%;
   }
 }
 

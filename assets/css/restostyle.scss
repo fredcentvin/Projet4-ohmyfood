@@ -1,8 +1,8 @@
 /***** variables****/
 @import "animationdem";
 @import "headerrestos";
-@import "color";
-@import "police";
+@import "colors";
+@import "fonts";
 @import "gridmenurestos";
 @import "mixin";
 @import "footer";
@@ -228,7 +228,6 @@ html {
 }
 
 main {
-    max-width: 1420px;
     margin: auto;
 }
 
