@@ -25,3 +25,22 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+@mixin globalslide {
+    animation-duration: .7s;
+    transform:scale(1);
+    animation-name: slide;
+    animation-timing-function: linear;
+        @media (min-width: 768px) {
+            padding-left: 90px;
+            padding-right: 90px; 
+        }
+        @media (min-width: 1024px) {
+            padding-left: 120px;
+            padding-right: 120px; 
+        }
+        @media (min-width: 1440px) {
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+    }

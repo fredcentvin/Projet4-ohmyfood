@@ -80,18 +80,18 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    @media (min-width: 768px) {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-    @media (min-width:1024px) {
-        margin-left: 130px;
-        margin-right: 130px;
-    }
-    @media (min-width:1440px) {
-        margin-left: 250px;
-        margin-right: 250px;
-    }
+        @media (min-width: 768px) {
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        @media (min-width:1024px) {
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+        @media (min-width:1440px) {
+            margin-left: 250px;
+            margin-right: 250px;
+        }
     .masque {
         background-color: #f6f6f6;
         position: relative;
@@ -108,75 +108,29 @@
         font-size: 14px;
         padding-bottom: 5px;
         border-bottom:5px solid $badgecolor;
-        width: 45px;
+        width: 40px;
         margin-bottom: 7px;
-        @media (min-width: 768px) {
-            margin-left: 90px;
+            @media (min-width: 768px) {
+                margin-left: 90px;
+            }
+            @media (min-width: 1024px) {
+                margin-left: 120px;
+            }
+            @media (min-width: 1440px) {
+                margin-left: 200px;
+            }
         }
-        @media (min-width: 1024px) {
-            margin-left: 120px;
-            width: 40px;
-        }
-        @media (min-width: 1440px) {
-            margin-left: 200px;
-        }
-    }
     .slideinentrees {
-        animation-duration: .7s;
-        transform:scale(1);
-        animation-name: slide;
-        animation-timing-function: linear;
-        @media (min-width: 768px) {
-            padding-left: 90px;
-            padding-right: 90px; 
+       @include globalslide;
         }
-        @media (min-width: 1024px) {
-            padding-left: 120px;
-            padding-right: 120px; 
-        }
-        @media (min-width: 1440px) {
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-    }
     .slideinplats {
-        animation-duration: .7s;
-        transform:scale(1);
-        animation-name: slide;
-        animation-timing-function: linear;
-        animation-delay: $tempo1;
-        @media (min-width: 768px) {
-            padding-left: 90px;
-            padding-right: 90px;
+       @include globalslide;
+        animation-delay: $tempo1;   
         }
-        @media (min-width: 1024px) {
-            padding-left: 120px;
-            padding-right: 120px; 
-        }
-        @media (min-width: 1440px) {
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-    }
     .slideindesserts {
-        animation-duration: .7s;
-        transform:scale(1);
-        animation-name: slide;
-        animation-timing-function: linear;
-        animation-delay: $tempo2;
-        @media (min-width: 768px) {
-            padding-left: 90px;
-            padding-right: 90px;
+        @include globalslide;
+        animation-delay: $tempo2;  
         }
-        @media (min-width: 1024px) {
-            padding-left: 120px;
-            padding-right: 120px; 
-        }
-        @media (min-width: 1440px) {
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-    }
 }
 
 .cardmenu {
@@ -212,6 +166,7 @@
     }
     .resto-petittexte {
         font-size: 13px;
+        font-weight: 300;
         margin-top: 2px;
         margin-bottom: 5px;
         overflow: hidden;
@@ -220,5 +175,3 @@
         }    
     }
 }
-
-

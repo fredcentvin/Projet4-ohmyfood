@@ -65,10 +65,14 @@ a {
   font-family: "roboto";
 }
 
+p {
+  font-family: "roboto";
+}
+
 h1 {
   font-family: "roboto";
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
   padding-bottom: 15px;
 }
 @media (min-width: 1024px) {
@@ -86,7 +90,6 @@ h2 {
 @media (min-width: 1024px) {
   h2 {
     font-size: 20px;
-    font-weight: 600;
   }
 }
 
@@ -95,11 +98,6 @@ h3 {
   font-size: 16px;
   color: black;
   margin: 0;
-}
-@media (min-width: 1024px) {
-  h3 {
-    font-size: 14px;
-  }
 }
 
 h4 {
@@ -131,10 +129,6 @@ h6 {
   font-size: 12px;
   color: green;
   font-weight: 500;
-}
-
-p {
-  font-family: "roboto";
 }
 
 .fa-mobile-screen-button {
@@ -298,7 +292,7 @@ p {
   font-size: 14px;
   padding-bottom: 5px;
   border-bottom: 5px solid #99e2d0;
-  width: 45px;
+  width: 40px;
   margin-bottom: 7px;
 }
 @media (min-width: 768px) {
@@ -309,7 +303,6 @@ p {
 @media (min-width: 1024px) {
   .formgrid .titre {
     margin-left: 120px;
-    width: 40px;
   }
 }
 @media (min-width: 1440px) {
@@ -427,11 +420,120 @@ p {
 }
 .cardmenu .card .resto-petittexte {
   font-size: 13px;
+  font-weight: 300;
   margin-top: 2px;
   margin-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.btnchoix {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 20px;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .btnchoix {
+    width: 100%;
+    height: 50px;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding-right: 10px;
+    max-width: 1440px;
+  }
+}
+.btnchoix .blocbtn {
+  border: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .btnchoix .blocbtn {
+    margin-bottom: 0;
+  }
+}
+.btnchoix .btngeneric {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 15px 15px 25px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 2px 7px rgb(179, 179, 179);
+  font-size: 13px;
+  font-weight: 600;
+  color: green;
+}
+@media (min-width: 768px) {
+  .btnchoix .btngeneric {
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+}
+.btnchoix .btntexte {
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  padding-left: 5px;
+}
+.btnchoix .btnicone {
+  display: flex;
+  width: 10%;
+}
+.btnchoix .btnnumero {
+  display: flex;
+  align-items: center;
+  width: 5%;
+}
+.btnchoix .btnnumero .cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  margin-left: -7px;
+  position: absolute;
+  left: 25px;
+  background-color: #9356dc;
+}
+@media (min-width: 768px) {
+  .btnchoix .btnnumero .cercle {
+    margin-right: 0;
+    position: unset;
+    margin-left: -10px;
+  }
+}
+
+.action {
+  height: 40px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  padding: 10px 40px 10px 40px;
+  box-shadow: 0px 2px 5px gray;
+  background: linear-gradient(#ff79da, #9356dc);
+  transition: all ease-in-out 300ms;
+}
+.action:hover {
+  box-shadow: 0px 3px 7px gray;
+  opacity: 0.8;
 }
 
 .gridfooter {
@@ -525,6 +627,10 @@ p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.gridfooter .centrage p {
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
 @media (min-width: 768px) {
   .gridfooter .centrage {
     display: flex;
@@ -543,6 +649,30 @@ p {
   opacity: 1;
 }
 
+.card:active .casecachee {
+  transform: translateX(-53px);
+  opacity: 1;
+}
+
+.card:active .prix {
+  transform: translateX(-10px);
+}
+
+.card:active .card-txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .card:hover .casecachee {
+    transform: translateX(-55px);
+    opacity: 1;
+  }
+  .card:hover .prix {
+    transform: translateX(-15px);
+  }
+}
 @media (min-width: 1024px) {
   .fa-regular.fa-heart:hover {
     opacity: 0;
@@ -550,6 +680,9 @@ p {
   .fa-solid.fa-heart:hover {
     font-weight: 900;
     opacity: 1;
+  }
+  .card:hover .casecachee {
+    transform: translateX(-60px);
   }
 }
 /****** General ***********/
@@ -566,28 +699,9 @@ body {
   }
 }
 
-.card:active .casecachee {
-  transform: translateX(-53px);
-  opacity: 1;
-}
-
-.card:active .prix {
-  transform: translateX(-10px);
-}
-
-.card:active .card-txt {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .img {
   object-fit: cover;
   max-width: 100%;
-}
-
-.card img {
-  object-fit: contain;
 }
 
 .fa-regular.fa-heart {
@@ -597,12 +711,6 @@ body {
   font-weight: 100;
   transition: all ease-in-out 300ms;
   z-index: 1;
-}
-@media (min-width: 1024px) {
-  .fa-regular.fa-heart {
-    font-size: 18px;
-    opacity: 0.8;
-  }
 }
 
 .fa-regular.fa-heart:active {
@@ -619,11 +727,6 @@ body {
   background-clip: text;
   transition: all ease-in-out 300ms;
   z-index: 2;
-}
-@media (min-width: 1024px) {
-  .fa-solid.fa-heart {
-    font-size: 18px;
-  }
 }
 
 .fa-solid.fa-heart:active {
@@ -643,23 +746,6 @@ body {
     margin-top: 15px;
     margin-bottom: 10px;
   }
-}
-.commande .actioncommande {
-  height: 40px;
-  border-radius: 25px;
-  color: white;
-  font-weight: 400;
-  font-size: 14px;
-  border: none;
-  padding: 10px 40px 10px 40px;
-  box-shadow: 0px 2px 5px gray;
-  background: linear-gradient(#ff79da, #9356dc);
-  flex-grow: 1;
-  transition: all ease-in-out 300ms;
-}
-.commande .actioncommande:hover {
-  box-shadow: 0px 3px 7px gray;
-  opacity: 0.8;
 }
 
 /****** menu***********/
@@ -704,19 +790,13 @@ body {
     transform: translateX(45px);
   }
 }
-@media (min-width: 1024px) {
-  .casemobile .prix {
-    transform: translateX(45px);
-    transition: transform 150ms linear;
-  }
-}
-.casemobile .prix .symboleeuro {
+.casemobile .symboleeuro {
   color: black;
   font-size: 13px;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .fa-circle-check {
@@ -741,23 +821,9 @@ body {
     width: 48px;
     font-weight: 300;
   }
-  .card:hover .casecachee {
-    transform: translateX(-55px);
-    opacity: 1;
-  }
-  .card:hover .prix {
-    transform: translateX(-15px);
-  }
 }
 /******* desktop *******/
 @media (min-width: 1024px) {
-  .card:hover .casecachee {
-    transform: translateX(-60px);
-    opacity: 1;
-  }
-  .card:hover .prix {
-    transform: translateX(-15px);
-  }
   .fa-solid.fa-heart:hover {
     opacity: 1;
     font-weight: 900;
@@ -765,21 +831,6 @@ body {
   }
   .fa-regular.fa-heart:hover {
     opacity: 0;
-  }
-}
-/******* large desktop *******/
-@media (min-width: 1440px) {
-  html {
-    display: flex;
-  }
-  main {
-    margin: auto;
-  }
-  .gridintroduction {
-    width: 100%;
-  }
-  .fonctionnement {
-    max-width: 1440px;
   }
 }
 

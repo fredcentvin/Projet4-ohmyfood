@@ -7,6 +7,33 @@
     opacity: 1;
 }
 
+.card:active .casecachee {
+    transform: translateX(-53px) ; 
+    opacity: 1;  
+}
+
+.card:active .prix {
+    transform: translateX(-10px);     
+}
+
+.card:active .card-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+    .card:hover .casecachee{
+        transform: translateX(-55px); 
+        opacity: 1;  
+    }
+    
+    .card:hover .prix {
+        transform: translateX(-15px);
+    }
+}
+
 
 @media (min-width: 1024px) {
 .fa-regular.fa-heart:hover {
@@ -17,5 +44,8 @@
     font-weight: 900;
     opacity: 1;
 }
-}
 
+.card:hover .casecachee{
+    transform: translateX(-60px);    
+}
+}
