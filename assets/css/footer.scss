@@ -13,9 +13,6 @@
         justify-content: flex-start;
         padding: 20px 30px 20px 80px ;
     }
-    @media (min-width:1441px) {
-        width: 100%;
-    }
     .logofooter {
         display: flex;
         flex-direction: column;
@@ -35,9 +32,6 @@
         filter: invert(100%);
         width: 95px;
         height: auto;
-        @media (min-width:768px) {
-            width: 95px;  
-        }
     }
     .liensnav {
         display: flex;

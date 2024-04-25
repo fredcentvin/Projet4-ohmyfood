@@ -34,12 +34,17 @@ body {
     font-weight: 100; 
     transition: all ease-in-out 300ms;  
     z-index: 1;
+    &:active {
+        color: transparent;
+        opacity: 0; 
+    }
+    @media (min-width: 1024px) { 
+        &:hover {
+        opacity: 0;    
+        }
+    }
 }
 
-.fa-regular.fa-heart:active {
-    color: transparent;
-    opacity: 0; 
-}
 
 .fa-solid.fa-heart {
     font-size: 18px;
@@ -50,11 +55,15 @@ body {
     background-clip: text;
     transition: all ease-in-out 300ms;
     z-index: 2;
-}
-
-.fa-solid.fa-heart:active {
-    opacity: 1;
-    font-weight: 900; 
+    &:active {
+        opacity: 1;
+        font-weight: 900;
+    }
+    @media (min-width: 1024px) {
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 .commande {
@@ -64,7 +73,6 @@ body {
     width: 100%;
     margin-top: 15px;
     @media (min-width: 1024px) {
-        margin-top: 15px;
         margin-bottom: 10px;
     }
     
@@ -138,20 +146,5 @@ body {
 .titre.h2{
     width: 48px;
     font-weight: 300;
-}
-}
-
-
-
-/******* desktop *******/
-@media (min-width: 1024px) {
-.fa-solid.fa-heart:hover {
-    opacity: 1;
-    font-weight: 900;
-    background-image: linear-gradient($pinkcolor,$purplecolor);
-}
-
-.fa-regular.fa-heart:hover {
-    opacity: 0;   
 }
 }
