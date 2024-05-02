@@ -27,45 +27,6 @@ body {
     max-width: 100%;
 }
 
-.fa-regular.fa-heart {
-    color:black;
-    font-size: 18px; 
-    opacity: 1;
-    font-weight: 100; 
-    transition: all ease-in-out 300ms;  
-    z-index: 1;
-    &:active {
-        color: transparent;
-        opacity: 0; 
-    }
-    @media (min-width: 1024px) { 
-        &:hover {
-        opacity: 0;    
-        }
-    }
-}
-
-
-.fa-solid.fa-heart {
-    font-size: 18px;
-    position: absolute;
-    color: transparent;
-    background-image: linear-gradient($pinkcolor,$purplecolor);
-    opacity: 0;
-    background-clip: text;
-    transition: all ease-in-out 300ms;
-    z-index: 2;
-    &:active {
-        opacity: 1;
-        font-weight: 900;
-    }
-    @media (min-width: 1024px) {
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
-
 .commande {
     display: flex;
     flex-direction: row;
@@ -74,8 +35,7 @@ body {
     margin-top: 15px;
     @media (min-width: 1024px) {
         margin-bottom: 10px;
-    }
-    
+    }    
 }
 
 /****** menu***********/
@@ -134,6 +94,44 @@ body {
     width: 18px;
     height: 18px;
     border: 1px solid $badgecolor;
+}
+
+.fa-regular.fa-heart {
+    color:black;
+    font-size: 18px; 
+    opacity: 1;
+    font-weight: 100; 
+    transition: all ease-in-out 300ms;  
+    z-index: 1;
+    &:active {
+        color: transparent;
+        opacity: 0; 
+    }
+    @media (min-width: 1024px) { 
+        &:hover {
+        opacity: 0;    
+        }
+    }
+}
+
+.fa-solid.fa-heart {
+    font-size: 18px;
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient($pinkcolor,$purplecolor);
+    opacity: 0;
+    background-clip: text;
+    transition: all ease-in-out 300ms;
+    z-index: 2;
+    &:active {
+        opacity: 1;
+        font-weight: 900;
+    }
+    @media (min-width: 1024px) {
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 
